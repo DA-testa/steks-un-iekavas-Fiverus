@@ -31,11 +31,11 @@ def find_mismatch(text):
 
 def main():
     text = input()
-    if text.lower().startswith("i"): 
-        text = input()
-    
     mismatch = find_mismatch(text)
     print(mismatch)
-    
+
+
 if __name__ == "__main__":
-    main()
+    mode = input()
+    if mode[0] == "I":
+        main()
